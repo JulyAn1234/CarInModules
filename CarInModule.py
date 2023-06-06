@@ -15,7 +15,7 @@ def make_request(event=None):
         show_custom_dialog("Error", "Número de control inválido.", 3000, entry)
         return
 
-    url = f"https://us-central1-carin-66b87.cloudfunctions.net/checkInStudent?ID={number}"
+    url = f"<API ENDPOINT>?ID={number}"
     response = requests.get(url)
     data = response.text
 
